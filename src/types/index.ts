@@ -11,7 +11,7 @@ export interface CourseModule {
 }
 
 export interface LessonResource {
-  type: 'video' | 'pdf'
+  type: 'video' | 'pdf' | 'link'
   title: string
   url: string
 }
@@ -42,4 +42,41 @@ export interface Activity {
   moduleId: number
   title: string
   description: string
+}
+
+export interface Mascot {
+  id: string
+  name: string
+  role: string
+  emoji: string
+  color: string
+  tip: string
+}
+
+export interface QuizOption {
+  id: string
+  text: string
+}
+
+export interface QuizQuestion {
+  id: string
+  prompt: string
+  options: QuizOption[]
+  correctOptionId: string
+}
+
+export interface PathNode {
+  id: string
+  kind: 'lesson' | 'quiz' | 'matching' | 'goal'
+  title: string
+  subtitle: string
+  mascotId: string
+  tip: string
+  lessonId?: string
+}
+
+export interface MatchingPair {
+  id: string
+  term: string
+  definition: string
 }

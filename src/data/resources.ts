@@ -5,16 +5,22 @@ export const resourceCategories: ResourceCategory[] = [
     id: 'consulta',
     icon: 'DocumentTextIcon',
     title: 'Materiales de consulta',
-    description: 'Guías y documentos en PDF para profundizar en cada módulo.',
+    description: 'Marcos de referencia y guías para profundizar en cada módulo.',
     items: [
       {
-        label: 'Secuencias didácticas multigrado para docentes de escuelas primarias',
-        description: 'Documento PDF · SEP · Módulo 1',
-        url: 'https://dgeiib.basica.sep.gob.mx/files/fondo-editorial/multigrado/m_00005.pdf',
+        label: 'Marco de Referencia de la Competencia Digital Docente',
+        description: 'Documento PDF · INTEF · Módulo 1',
+        url: 'https://intef.es/wp-content/uploads/2023/05/MRCDD_GTTA_2022.pdf',
       },
       {
-        label: 'Manual de educación en línea para docentes',
-        description: 'Documento PDF · Módulo 2 (próximamente)',
+        label: 'Guía de la UNESCO sobre IA generativa en educación',
+        description: 'Documento (en inglés) · UNESCO · Módulo 3 (próximamente)',
+        url: 'https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research',
+      },
+      {
+        label: 'Revista Aula Digital · TIC en la educación',
+        description: 'Revista digital (Calameo) · Ver en Acerca del curso',
+        url: 'https://www.calameo.com/read/007767652e7feef96a561',
       },
     ],
   },
@@ -25,14 +31,9 @@ export const resourceCategories: ResourceCategory[] = [
     description: 'Cápsulas y conferencias por tema.',
     items: [
       {
-        label: 'Enseñanza en las escuelas rurales multigrado',
+        label: 'Competencia digital docente: claves para integrar la tecnología en el aula',
         description: 'Video · Módulo 1',
-        url: 'https://www.youtube.com/watch?v=gM7QbldT4zg',
-      },
-      {
-        label: 'La escuela como centro de aprendizaje comunitario · Soy Docente',
-        description: 'Video · SEP · Módulo 1',
-        url: 'https://www.youtube.com/watch?v=-Alz892H9Xg',
+        url: 'https://www.youtube.com/watch?v=Hr1wejLfkKY',
       },
     ],
   },
@@ -40,10 +41,23 @@ export const resourceCategories: ResourceCategory[] = [
     id: 'herramientas',
     icon: 'WrenchScrewdriverIcon',
     title: 'Herramientas digitales',
-    description: 'Aplicaciones y plataformas recomendadas, con versión ligera para zonas de baja conectividad.',
+    description: 'Aplicaciones y plataformas gratuitas para diseñar materiales y organizar tareas administrativas.',
     items: [
-      { label: 'Google Classroom (modo offline)', description: 'Herramienta recomendada' },
-      { label: 'Canva para material didáctico', description: 'Herramienta recomendada' },
+      {
+        label: 'Canva para Docentes',
+        description: 'Diseño de fichas, infografías y presentaciones · Gratis',
+        url: 'https://www.canva.com/education/teachers/',
+      },
+      {
+        label: 'Google Classroom',
+        description: 'Organización de tareas, avisos y materiales',
+        url: 'https://edu.google.com/intl/ALL_us/workspace-for-education/products/classroom/',
+      },
+      {
+        label: 'Pixabay',
+        description: 'Banco de imágenes gratuitas y de uso libre',
+        url: 'https://pixabay.com/es/',
+      },
     ],
   },
   {
@@ -52,8 +66,8 @@ export const resourceCategories: ResourceCategory[] = [
     title: 'Recursos descargables',
     description: 'Plantillas y fichas listas para imprimir o adaptar en tu salón.',
     items: [
-      { label: 'Plantilla de planeación diferenciada', description: 'Documento editable' },
-      { label: 'Fichas de trabajo colaborativo', description: 'Documento editable' },
+      { label: 'Checklist de uso ético de recursos digitales', description: 'Documento editable' },
+      { label: 'Plantilla de planeación con recursos digitales', description: 'Documento editable' },
     ],
   },
   {
@@ -63,14 +77,14 @@ export const resourceCategories: ResourceCategory[] = [
     description: 'Lecturas y sitios externos para ampliar cada tema.',
     items: [
       {
-        label: 'Pedagogía y didáctica del aula multigrado',
-        description: 'Documento PDF · SEP · Módulo 1',
-        url: 'https://dgesum.sep.gob.mx/storage/recursos/planes2022/HzMMlgcAPs-4442.pdf',
+        label: 'Licencias Creative Commons, explicadas',
+        description: 'Sitio oficial · Uso ético y derechos de autor',
+        url: 'https://creativecommons.org/licenses/?lang=es',
       },
       {
-        label: 'Planeación didáctica multigrado · Orientaciones CTE',
-        description: 'Documento PDF · SEP · Módulo 1',
-        url: 'https://gestion.cte.sep.gob.mx/insumos/docs/2526_s6_multi_orientaciones_Tema2.pdf',
+        label: 'Recomendación de la UNESCO sobre la ética de la inteligencia artificial',
+        description: 'Documento · UNESCO · Módulo 3 (próximamente)',
+        url: 'https://www.unesco.org/es/articles/recomendacion-sobre-la-etica-de-la-inteligencia-artificial',
       },
     ],
   },

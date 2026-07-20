@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { motion } from 'motion-v'
 import { ClockIcon, UserGroupIcon, AcademicCapIcon } from '@heroicons/vue/24/outline'
+import CalameoViewer from '@/components/course/CalameoViewer.vue'
 
 const facts = [
   { icon: ClockIcon, label: 'Modalidad', value: 'En línea, autoadministrado (asíncrono)' },
@@ -48,10 +49,26 @@ const facts = [
     >
       <h2 class="text-xl">Propósito</h2>
       <p class="mt-3 text-(--color-ink)/80">
-        Que las y los docentes fortalezcan sus competencias digitales y pedagógicas a través de contenidos
-        prácticos, aplicables de inmediato en su salón de clases, sin importar los recursos tecnológicos
-        disponibles en su comunidad.
+        Fortalecer las competencias digitales de las y los docentes de educación primaria rural mediante una
+        experiencia de aprendizaje gamificada que promueva la exploración, el uso y la aplicación de herramientas
+        digitales útiles para su práctica profesional: diseñar recursos educativos, optimizar tareas
+        administrativas, incorporar la inteligencia artificial de forma ética y enriquecer sus procesos de
+        enseñanza y aprendizaje.
       </p>
+    </motion.div>
+
+    <motion.div
+      class="mx-auto max-w-3xl"
+      :initial="{ opacity: 0, y: 16 }"
+      :while-in-view="{ opacity: 1, y: 0 }"
+      :viewport="{ once: true, margin: '-40px' }"
+      :transition="{ duration: 0.35, delay: 0.05 }"
+    >
+      <CalameoViewer
+        bkcode="007767652e7feef96a561"
+        title="Revista Aula Digital · TIC en la educación"
+        description="Como parte de la investigación de este proyecto, te compartimos esta revista digital que explora el impacto de las Tecnologías de la Información y la Comunicación en el ámbito educativo. Puedes leerla directamente aquí, sin salir de la página."
+      />
     </motion.div>
 
     <motion.div
@@ -63,9 +80,11 @@ const facts = [
     >
       <h2 class="text-xl">Metodología</h2>
       <p class="mt-3 text-(--color-ink)/80">
-        El curso se organiza en 4 módulos progresivos. Cada módulo incluye materiales de consulta, un video o
-        infografía de apoyo, una actividad práctica y un espacio de reflexión. Al finalizar cada módulo podrás
-        registrar tu evidencia de trabajo en la sección correspondiente.
+        El curso se organiza en 4 módulos progresivos, cada uno enfocado en una habilidad digital distinta: diseño
+        de recursos educativos, optimización de tareas administrativas, inteligencia artificial ética, e
+        innovación en la enseñanza. Dentro de cada módulo recorrerás un camino de niveles, al estilo de un
+        videojuego, con lecciones, retos gamificados y recompensas que se van desbloqueando conforme avanzas. Al
+        finalizar cada módulo podrás registrar tu evidencia de trabajo en la sección correspondiente.
       </p>
     </motion.div>
 

@@ -1,91 +1,72 @@
 import type { Lesson } from '@/types'
 
 export const module1Intro =
-  'En este módulo reflexionarás a fondo sobre las particularidades de enseñar en un aula rural, muchas veces multigrado, y conocerás estrategias pedagógicas pensadas específicamente para ese contexto. No se trata de replicar el modelo de una escuela urbana con menos recursos, sino de reconocer y aprovechar las fortalezas propias de la comunidad rural. A lo largo de cuatro lecciones encontrarás fundamentos, ejemplos prácticos y materiales oficiales de la SEP y el CONAFE para profundizar en cada tema.'
+  'En este módulo darás tus primeros pasos para fortalecer tus competencias digitales: vas a explorar qué son los recursos educativos digitales, a conocer herramientas gratuitas para crearlos, a adaptarlos a la conectividad real de tu comunidad y a usarlos de forma ética. No necesitas experiencia previa con tecnología: cada lección incluye ejemplos concretos y pensados para el contexto rural, multigrado y con acceso limitado a internet.'
 
 export const module1Lessons: Lesson[] = [
   {
     id: 'l1',
-    title: 'Características del aula multigrado',
+    title: '¿Qué son los recursos educativos digitales?',
     body: [
-      'Un aula multigrado reúne en un mismo espacio y tiempo a estudiantes de distintos grados, edades y niveles de desarrollo, a cargo de una sola maestra o maestro. Esto exige organizar la enseñanza de manera muy distinta a la de un aula graduada tradicional, donde todos los alumnos comparten edad y nivel curricular.',
-      'Lejos de ser una limitación, el aula multigrado favorece de forma natural el aprendizaje entre pares: los estudiantes de grados más avanzados apoyan a los más pequeños, y todos aprenden a trabajar con autonomía mientras la o el docente atiende a un grupo específico. Este modelo se conoce como tutoría entre iguales y es una de las bases de propuestas como Dialogar y Descubrir del CONAFE.',
-      'Reconocer estas características es el primer paso para planear con realismo: no busques una sesión idéntica para todos, sino actividades con distintos niveles de complejidad que convivan en el mismo momento de clase.',
-      'Antes de planear, dedica tiempo a elaborar un diagnóstico de tu grupo: qué saben hacer tus estudiantes de cada grado, qué similitudes existen entre grados distintos y qué temas del programa pueden abordarse de forma conjunta. Este diagnóstico será la base de toda tu planeación diferenciada en las siguientes lecciones.',
-    ],
-    resources: [
-      {
-        type: 'video',
-        title: 'Retos y ventajas de la educación rural multigrado en México',
-        url: 'https://www.youtube.com/watch?v=PlJnDHcmyOg',
-      },
+      'Un recurso educativo digital (RED) es cualquier material de apoyo a la enseñanza creado o adaptado con una herramienta digital: una ficha de trabajo, una infografía, una presentación, un audio o un video breve. La clave no es la tecnología en sí, sino que el recurso te ayude a explicar mejor un tema o a que tus estudiantes practiquen de forma más clara.',
+      'En el aula rural multigrado, un recurso digital bien diseñado tiene una ventaja extra: se puede adaptar rápido para distintos grados, reutilizar ciclo tras ciclo, e imprimir cuando no haya forma de proyectarlo. No se trata de sustituir tus materiales de papel, sino de tener una versión editable que te ahorre tiempo a futuro.',
+      'No todo recurso digital requiere internet para usarse en clase: puedes crear el material una sola vez, cuando tengas señal, y después proyectarlo o imprimirlo sin conexión. La meta de este módulo es justamente esa: perder el miedo a la herramienta y aprender a planear con la conectividad real de tu comunidad en mente.',
+      'Antes de seguir, piensa en una actividad que ya usas en papel (una ficha, un juego, una lámina) y que te gustaría convertir en un recurso digital. La usarás como ejemplo práctico a lo largo de este módulo.',
     ],
   },
   {
     id: 'l2',
-    title: 'Planeación diferenciada',
+    title: 'Herramientas gratuitas para crear materiales',
     body: [
-      'Planear de forma diferenciada significa diseñar una misma sesión con distintas rutas de trabajo, según el grado o el nivel de cada estudiante, en lugar de repetir la clase varias veces.',
-      'Una estrategia práctica es partir de un tema común para todo el grupo (por ejemplo, "el agua en nuestra comunidad") y, a partir de ahí, plantear consignas con distinto grado de exigencia: los más pequeños dibujan y describen, los intermedios escriben un párrafo, y los más grandes investigan y argumentan. Esta estrategia se conoce como "tema común con actividades diferenciadas" y es una de las más usadas en las guías oficiales de la SEP para escuelas multigrado.',
-      'Organizar "rincones" o estaciones de trabajo por nivel dentro del aula permite que cada estudiante avance en la actividad que le corresponde mientras tú te desplazas para apoyar a quien más lo necesita en ese momento. Esta forma de organizar el espacio físico es tan importante como la planeación de contenidos.',
-      'Documentar tu planeación diferenciada —aunque sea en un formato sencillo— te permite dar seguimiento al avance real de cada estudiante y ajustar la siguiente sesión con base en evidencia, no solo en intuición.',
+      'Existen herramientas gratuitas, pensadas para docentes, que no requieren instalar nada ni saber diseño: solo necesitas una cuenta de correo y elegir una plantilla. Canva para Educación, por ejemplo, ofrece plantillas listas para fichas, infografías y presentaciones, con acceso gratuito para docentes de educación básica.',
+      'Google Slides y Google Docs son otra opción sencilla: permiten crear presentaciones y documentos que se guardan automáticamente y se pueden exportar como PDF o imagen para compartirlos sin necesidad de que tus estudiantes tengan cuenta de Google.',
+      'Si tu material necesita imágenes, evita descargar cualquier imagen de internet: usa bancos de imágenes gratuitas y de uso libre, como Pixabay, que no requieren pago ni dan problemas de derechos de autor.',
+      'Un buen primer ejercicio es tomar la actividad de papel que elegiste en la lección anterior y recrearla en una sola plantilla, sin buscar que quede perfecta. La práctica repetida, no la perfección, es lo que construye tu competencia digital.',
     ],
     resources: [
       {
-        type: 'pdf',
-        title: 'Secuencias didácticas multigrado para docentes de escuelas primarias (SEP)',
-        url: 'https://dgeiib.basica.sep.gob.mx/files/fondo-editorial/multigrado/m_00005.pdf',
-      },
-      {
-        type: 'pdf',
-        title: 'Planeación didáctica multigrado · Orientaciones CTE (SEP)',
-        url: 'https://gestion.cte.sep.gob.mx/insumos/docs/2526_s6_multi_orientaciones_Tema2.pdf',
+        type: 'link',
+        title: 'Canva para Docentes (gratis)',
+        url: 'https://www.canva.com/education/teachers/',
       },
     ],
   },
   {
     id: 'l3',
-    title: 'Aprendizaje situado y comunitario',
+    title: 'Adaptar recursos a la conectividad de tu comunidad',
     body: [
-      'El aprendizaje situado propone que los contenidos escolares cobren sentido cuando se conectan con la vida cotidiana y el entorno inmediato de las y los estudiantes: el campo, el mercado local, las tradiciones familiares, el ciclo agrícola.',
-      'En la escuela rural, la comunidad es un recurso pedagógico en sí misma. Invitar a madres, padres o personas mayores de la comunidad a compartir un saber (un oficio, una receta, una técnica de siembra) puede convertirse en el punto de partida de una secuencia didáctica completa.',
-      'Una herramienta útil es el calendario sociocultural de la comunidad: un registro de las actividades productivas, festividades y ciclos naturales propios de la localidad a lo largo del año. Alinear tu planeación con este calendario te permite anticipar los mejores momentos para trabajar cada tema con pertinencia cultural.',
-      'Este enfoque no solo enriquece el aprendizaje: también fortalece el vínculo entre la escuela y la comunidad, y da a las niñas y los niños un motivo concreto para valorar su propio entorno.',
-    ],
-    resources: [
-      {
-        type: 'video',
-        title: 'La escuela como centro de aprendizaje comunitario · Soy Docente (SEP)',
-        url: 'https://www.youtube.com/watch?v=-Alz892H9Xg',
-      },
+      'La conectividad limitada no debe ser un obstáculo para usar recursos digitales, sino una condición que hay que planear con anticipación. Aprovecha los momentos en que tienes señal (en la cabecera municipal, en casa, en la escuela si hay internet) para descargar, exportar o imprimir los materiales que usarás durante la semana.',
+      'Prefiere formatos ligeros: una imagen o un PDF pesan mucho menos que un video, y se pueden compartir por USB o Bluetooth entre dispositivos sin gastar datos móviles. Guarda tus materiales en una carpeta organizada por módulo o por semana para encontrarlos rápido, incluso sin conexión.',
+      'Si en tu comunidad hay pocos dispositivos disponibles, no es necesario que cada estudiante tenga uno: puedes proyectar el recurso desde un solo dispositivo, imprimir copias reducidas, o trabajar por equipos rotando el acceso a la pantalla.',
+      'Documenta qué estrategia de conectividad usaste con cada recurso (impreso, proyectado, compartido por USB): esa información te servirá para planear con más realismo el siguiente ciclo escolar.',
     ],
   },
   {
     id: 'l4',
-    title: 'Gestión del tiempo y organización del aula',
+    title: 'Uso ético y derechos de autor',
     body: [
-      'Uno de los mayores retos del aula multigrado es repartir tu tiempo entre varios grados sin que ninguno quede desatendido demasiado tiempo. Dividir la sesión en bloques breves y alternar la atención directa con el trabajo autónomo es clave para lograrlo.',
-      'Establecer rutinas claras —cómo pedir ayuda, qué hacer al terminar una actividad, dónde entregar el trabajo— reduce las interrupciones y da a tus estudiantes mayor autonomía, liberando tiempo para que atiendas al grupo que más lo necesita en cada momento.',
-      'Un horario visual, pegado en el salón, ayuda a que cada grado sepa qué actividad le corresponde en cada bloque sin depender de que se lo repitas constantemente. Esto es especialmente útil en grupos con más de dos grados.',
-      'La organización del tiempo no es rígida: revisa semanalmente qué funcionó y qué no, y ajusta tus bloques y rutinas con base en lo que observas en tu grupo.',
+      'Cuando uses imágenes, textos o plantillas de otras personas, es importante dar crédito y respetar las licencias de uso. Las licencias Creative Commons son un sistema sencillo que indica qué se puede hacer con una obra (usarla, adaptarla, compartirla) sin necesidad de pedir permiso directo al autor.',
+      'Evita publicar fotografías o trabajos de tus estudiantes en internet sin el consentimiento de sus familias, y cuando lo hagas, procura no incluir datos personales visibles (nombre completo, ubicación exacta de la escuela).',
+      'Estas mismas buenas prácticas —dar crédito, cuidar la privacidad, revisar antes de compartir— son la base para usar herramientas más avanzadas, como la inteligencia artificial, de forma responsable: lo verás con más detalle en un módulo próximo.',
+      'Antes de compartir cualquier recurso que crees, revisa una checklist breve: ¿di crédito a las fuentes que usé?, ¿protegí la identidad de mis estudiantes?, ¿el recurso es útil también sin conexión?',
     ],
     resources: [
       {
-        type: 'pdf',
-        title: 'La Propuesta Educativa Multigrado · Reorganización curricular (SEP)',
-        url: 'https://tabasco.gob.mx/sites/default/files/users/setabasco/Gu%C3%ADa%20Multigrado_compressed.pdf',
+        type: 'link',
+        title: 'Licencias Creative Commons, explicadas',
+        url: 'https://creativecommons.org/licenses/?lang=es',
       },
     ],
   },
 ]
 
 export const module1Video = {
-  title: 'Enseñanza en las escuelas rurales multigrado',
-  url: 'https://www.youtube.com/watch?v=gM7QbldT4zg',
+  title: 'Competencia digital docente: claves para integrar la tecnología en el aula',
+  url: 'https://www.youtube.com/watch?v=Hr1wejLfkKY',
 }
 
 export const module1Resource = {
-  label: 'Pedagogía y didáctica del aula multigrado (SEP)',
-  description: 'Documento PDF oficial · Módulo 1',
-  url: 'https://dgesum.sep.gob.mx/storage/recursos/planes2022/HzMMlgcAPs-4442.pdf',
+  label: 'Marco de Referencia de la Competencia Digital Docente (INTEF)',
+  description: 'Documento PDF · Marco de competencias digitales para docentes',
+  url: 'https://intef.es/wp-content/uploads/2023/05/MRCDD_GTTA_2022.pdf',
 }

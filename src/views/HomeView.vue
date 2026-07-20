@@ -6,19 +6,19 @@ import {
   PencilSquareIcon,
   ComputerDesktopIcon,
   FolderArrowDownIcon,
-  UserGroupIcon,
+  SparklesIcon,
   ChartBarIcon,
 } from '@heroicons/vue/24/outline'
 import BaseButton from '@/components/ui/BaseButton.vue'
 
 const highlights = [
-  { icon: BookOpenIcon, text: 'Materiales de consulta' },
-  { icon: PlayCircleIcon, text: 'Videos educativos' },
-  { icon: PencilSquareIcon, text: 'Actividades de aprendizaje' },
-  { icon: ComputerDesktopIcon, text: 'Herramientas digitales' },
-  { icon: FolderArrowDownIcon, text: 'Recursos descargables' },
-  { icon: UserGroupIcon, text: 'Espacios de reflexión' },
-  { icon: ChartBarIcon, text: 'Instrumentos de autoevaluación' },
+  { icon: BookOpenIcon, text: 'Recursos educativos digitales' },
+  { icon: PlayCircleIcon, text: 'Videos y tutoriales' },
+  { icon: PencilSquareIcon, text: 'Retos gamificados por módulo' },
+  { icon: ComputerDesktopIcon, text: 'Herramientas para tareas administrativas' },
+  { icon: SparklesIcon, text: 'IA aplicada con ética' },
+  { icon: FolderArrowDownIcon, text: 'Plantillas descargables' },
+  { icon: ChartBarIcon, text: 'Niveles, retos y recompensas' },
 ]
 
 const fadeUp = {
@@ -32,10 +32,11 @@ const fadeUp = {
   <div>
     <section class="container-page py-14 text-center lg:py-20">
       <motion.div :initial="{ opacity: 0, y: 20 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.4 }">
-        <span class="badge-pill bg-(--color-primary)/15 text-(--color-primary-dark)">Curso de autocapacitación docente</span>
+        <span class="badge-pill bg-(--color-primary)/15 text-(--color-primary-dark)">Curso gamificado de competencias digitales</span>
         <h1 class="mx-auto mt-4 max-w-2xl text-4xl leading-tight sm:text-5xl">Aula Rural Digital</h1>
         <p class="mx-auto mt-3 max-w-xl text-lg text-(--color-muted)">
-          Espacio de autocapacitación para docentes de educación primaria rural
+          Fortalece tus competencias digitales con una experiencia de aprendizaje gamificada, pensada para el aula
+          rural
         </p>
         <p class="mt-4 text-sm text-(--color-muted)">
           Curso: Educación en línea · Autora: Mtra. Nora Yeny Torres Robles
@@ -55,19 +56,19 @@ const fadeUp = {
         <motion.div v-bind="fadeUp" :transition="{ duration: 0.35 }" class="mx-auto max-w-3xl">
           <h2 class="text-2xl md:text-3xl">Bienvenida</h2>
           <p class="mt-4 text-(--color-ink)/80">
-            Bienvenida a <strong>Aula Rural Digital</strong>, un espacio diseñado para favorecer la formación
-            continua de las maestras y los maestros de educación primaria que laboran en contextos rurales.
+            Bienvenida a <strong>Aula Rural Digital</strong>, un espacio gamificado diseñado para fortalecer las
+            competencias digitales de las maestras y los maestros de educación primaria que laboran en contextos
+            rurales.
           </p>
           <p class="mt-4 text-(--color-ink)/80">
-            La educación en línea ofrece nuevas oportunidades para fortalecer la práctica docente mediante el
-            aprendizaje autónomo, el acceso a recursos digitales y el intercambio de experiencias exitosas. Este
-            sitio reúne materiales, actividades y herramientas que buscan apoyar el desarrollo profesional docente
-            con una perspectiva práctica, flexible y contextualizada.
+            A través de módulos, retos y actividades, recorrerás un camino de niveles como en un juego: cada reto
+            superado te acerca a explorar, usar y aplicar herramientas digitales útiles para tu práctica
+            profesional, a tu propio ritmo y sin necesitar experiencia previa con la tecnología.
           </p>
           <p class="mt-4 text-(--color-ink)/80">
-            Esperamos que este espacio contribuya al fortalecimiento de tus competencias digitales y pedagógicas
-            para enriquecer los procesos de enseñanza y aprendizaje en beneficio de las niñas y los niños de
-            nuestras comunidades.
+            Esperamos que este espacio te ayude a diseñar tus propios recursos educativos, optimizar tus tareas
+            administrativas, incorporar la inteligencia artificial de forma ética y enriquecer tus procesos de
+            enseñanza y aprendizaje, en beneficio de las niñas y los niños de nuestras comunidades.
           </p>
         </motion.div>
       </div>
@@ -77,10 +78,12 @@ const fadeUp = {
       <motion.div v-bind="fadeUp" :transition="{ duration: 0.35 }" class="card mx-auto max-w-3xl p-8">
         <h2 class="text-xl">Objetivo general</h2>
         <p class="mt-3 text-(--color-ink)/80">
-          Proporcionar un espacio virtual de autoaprendizaje que permita a las y los docentes de educación
-          primaria rural fortalecer sus competencias pedagógicas y digitales mediante recursos educativos,
-          actividades de reflexión y herramientas tecnológicas que favorezcan una práctica docente innovadora y
-          pertinente.
+          Fortalecer las competencias digitales de las y los docentes de educación primaria rural mediante una
+          experiencia de aprendizaje gamificada que promueva la exploración, el uso y la aplicación de
+          herramientas digitales útiles para su práctica profesional. A través de módulos, retos y actividades,
+          las y los participantes desarrollarán habilidades para diseñar recursos educativos, optimizar tareas
+          administrativas, incorporar la inteligencia artificial de forma ética y enriquecer los procesos de
+          enseñanza y aprendizaje, favoreciendo una educación más innovadora y contextualizada.
         </p>
       </motion.div>
     </section>
@@ -107,8 +110,9 @@ const fadeUp = {
       <motion.div v-bind="fadeUp" :transition="{ duration: 0.35 }" class="card mx-auto max-w-3xl p-8 text-center">
         <h2 class="text-xl">¿A quién está dirigido?</h2>
         <p class="mt-3 text-(--color-ink)/80">
-          A docentes de educación primaria que desempeñan su labor en escuelas rurales y desean fortalecer sus
-          competencias para integrar estrategias innovadoras y recursos digitales en su práctica cotidiana.
+          A docentes de educación primaria que desempeñan su labor en escuelas rurales y quieren fortalecer sus
+          competencias digitales de forma práctica y gamificada, sin necesitar experiencia previa con la
+          tecnología.
         </p>
       </motion.div>
     </section>

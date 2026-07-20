@@ -9,6 +9,7 @@ import {
   ClockIcon,
   PlayCircleIcon,
   DocumentTextIcon,
+  LinkIcon,
   ArrowRightIcon,
   ArrowTopRightOnSquareIcon,
 } from '@heroicons/vue/24/outline'
@@ -16,8 +17,14 @@ import { CheckCircleIcon as CheckCircleSolid } from '@heroicons/vue/24/solid'
 import { modules } from '@/data/modules'
 import { activities } from '@/data/activities'
 import { module1Intro, module1Lessons, module1Video, module1Resource } from '@/data/module1Content'
+import { module1Path } from '@/data/module1Path'
+import { mascots } from '@/data/mascots'
 import { useCourseStore } from '@/stores'
 import BaseButton from '@/components/ui/BaseButton.vue'
+import LearningPath from '@/components/course/LearningPath.vue'
+import QuizGame from '@/components/course/QuizGame.vue'
+import MatchingGame from '@/components/course/MatchingGame.vue'
+import MascotBubble from '@/components/course/MascotBubble.vue'
 
 const route = useRoute()
 const toast = useToast()
@@ -48,6 +55,14 @@ function completeModule() {
     toast.success(`¡Módulo ${module.value.id} completado!`)
   }
 }
+
+function pathNodeFor(lessonId: string) {
+  return module1Path.find((node) => node.lessonId === lessonId)
+}
+
+function mascotFor(mascotId: string) {
+  return mascots.find((m) => m.id === mascotId)!
+}
 </script>
 
 <template>
@@ -68,7 +83,7 @@ function completeModule() {
         <h1 class="mt-1 text-2xl">{{ module.title }}</h1>
         <p class="mt-3 text-sm text-(--color-muted)">
           Este módulo está en construcción y estará disponible próximamente. Mientras tanto, te invitamos a
-          completar el Módulo 1: Pedagogía Rural, que ya está disponible.
+          completar el Módulo 1: Diseño de Recursos Educativos Digitales, que ya está disponible.
         </p>
         <div class="mt-6 flex flex-wrap justify-center gap-3">
           <BaseButton as="router-link" to="/modulos/1" variant="cta">Ir al Módulo 1</BaseButton>
@@ -106,13 +121,17 @@ function completeModule() {
         {{ module1Intro }}
       </motion.p>
 
+      <motion.div :initial="{ opacity: 0, y: 16 }" :animate="{ opacity: 1, y: 0 }" :transition="{ duration: 0.35, delay: 0.08 }">
+        <LearningPath />
+      </motion.div>
+
       <motion.div
         class="space-y-4"
         :initial="{ opacity: 0, y: 16 }"
         :animate="{ opacity: 1, y: 0 }"
         :transition="{ duration: 0.35, delay: 0.1 }"
       >
-        <div v-for="(lesson, index) in module1Lessons" :key="lesson.id" class="card p-6">
+        <div v-for="(lesson, index) in module1Lessons" :key="lesson.id" :id="`lesson-${lesson.id}`" class="card scroll-mt-24 p-6">
           <div class="flex flex-wrap items-start justify-between gap-3">
             <h2 class="text-lg font-semibold">{{ index + 1 }}. {{ lesson.title }}</h2>
             <button
@@ -143,12 +162,25 @@ function completeModule() {
               class="flex items-center gap-2.5 rounded-lg px-2 py-1.5 -mx-2 text-sm font-medium text-(--color-primary-dark) transition hover:bg-(--color-primary)/8"
             >
               <PlayCircleIcon v-if="resource.type === 'video'" class="h-4.5 w-4.5 shrink-0" />
-              <DocumentTextIcon v-else class="h-4.5 w-4.5 shrink-0" />
+              <DocumentTextIcon v-else-if="resource.type === 'pdf'" class="h-4.5 w-4.5 shrink-0" />
+              <LinkIcon v-else class="h-4.5 w-4.5 shrink-0" />
               <span class="flex-1">{{ resource.title }}</span>
               <ArrowTopRightOnSquareIcon class="h-3.5 w-3.5 shrink-0" />
             </a>
           </div>
+
+          <div v-if="pathNodeFor(lesson.id)" class="mt-4 border-t border-slate-100 pt-4">
+            <MascotBubble :mascot="mascotFor(pathNodeFor(lesson.id)!.mascotId)" :message="pathNodeFor(lesson.id)!.tip" />
+          </div>
         </div>
+      </motion.div>
+
+      <motion.div :initial="{ opacity: 0, y: 16 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true, margin: '-40px' }" :transition="{ duration: 0.35 }">
+        <QuizGame />
+      </motion.div>
+
+      <motion.div :initial="{ opacity: 0, y: 16 }" :while-in-view="{ opacity: 1, y: 0 }" :viewport="{ once: true, margin: '-40px' }" :transition="{ duration: 0.35 }">
+        <MatchingGame />
       </motion.div>
 
       <motion.div
@@ -211,7 +243,8 @@ function completeModule() {
       </motion.div>
 
       <motion.div
-        class="card p-6"
+        id="meta-section"
+        class="card scroll-mt-24 p-6"
         :initial="{ opacity: 0, y: 16 }"
         :while-in-view="{ opacity: 1, y: 0 }"
         :viewport="{ once: true, margin: '-40px' }"
