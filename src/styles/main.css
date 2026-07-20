@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+
+@theme {
+  /* ---- Brand palette (Misión Rural) ---- */
+  --color-primary: #3cdbd3;
+  --color-primary-dark: #29b8b1;
+  --color-primary-light: #a4ede8;
+
+  --color-secondary: #7dce82;
+  --color-secondary-dark: #5fae65;
+  --color-secondary-light: #c1e9c3;
+
+  --color-accent: #e8e288;
+  --color-accent-dark: #cdc45f;
+
+  --color-cta: #ff8360;
+  --color-cta-dark: #e8683e;
+  --color-cta-light: #ffb39d;
+
+  --color-bg: #f5fffd;
+  --color-surface: #ffffff;
+
+  --color-ink: #1f2937;
+  --color-muted: #64748b;
+
+  /* ---- Typography ---- */
+  --font-heading: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* ---- Shape & motion ---- */
+  --radius-card: 1.25rem;
+  --shadow-soft: 0 2px 8px 0 rgb(31 41 55 / 0.04), 0 8px 24px -4px rgb(31 41 55 / 0.08);
+  --shadow-soft-lg: 0 8px 16px -4px rgb(31 41 55 / 0.06), 0 20px 40px -8px rgb(31 41 55 / 0.12);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-(--color-bg) text-(--color-ink) font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-semibold tracking-tight;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-(--color-primary);
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-(--radius-card) bg-(--color-surface) shadow-(--shadow-soft) border border-slate-100;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-(--shadow-soft-lg) hover:-translate-y-0.5;
+  }
+
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .badge-pill {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium;
+  }
+}
