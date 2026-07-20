@@ -48,7 +48,7 @@ const columns = [
 
     <div class="border-t border-slate-100 py-6">
       <p class="container-page text-center text-xs text-(--color-muted)">
-        © 2026 Aula Rural Digital. Curso de autocapacitación docente · Mtra. Nora Torres.
+        © 2026 Aula Rural Digital. Curso de autocapacitación docente · Mtra. Nora Yeny Torres Robles.
       </p>
     </div>
   </footer>
