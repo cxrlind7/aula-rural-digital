@@ -4,25 +4,28 @@ export const activities: Activity[] = [
   {
     id: 'a-1',
     moduleId: 1,
-    title: 'Reflexión sobre tu planeación multigrado',
-    description: 'Describe brevemente cómo organizas actualmente tu planeación para atender distintos grados al mismo tiempo.',
+    title: 'Crea tu primer recurso digital',
+    description:
+      'Diseña una ficha, infografía o presentación breve para tu grupo usando una herramienta digital gratuita, y describe qué herramienta usaste y por qué.',
   },
   {
     id: 'a-2',
     moduleId: 2,
-    title: 'Tu horario de estudio autónomo',
-    description: 'Elabora un horario semanal de estudio autónomo para avanzar en este curso.',
+    title: 'Digitaliza una tarea administrativa',
+    description:
+      'Elige una tarea administrativa que repites seguido (pase de lista, registro de calificaciones, comunicación con familias) y describe cómo la resolverías con una herramienta digital.',
   },
   {
     id: 'a-3',
     moduleId: 3,
-    title: 'Diseño de una actividad didáctica',
-    description: 'Diseña una actividad breve para tu clase aplicando alguna de las estrategias revisadas en este módulo.',
+    title: 'Explora una herramienta de IA con criterio ético',
+    description:
+      'Prueba una herramienta de inteligencia artificial generativa para preparar un material de apoyo, y reflexiona sobre qué revisaste o ajustaste antes de usarlo con tus estudiantes.',
   },
   {
     id: 'a-4',
     moduleId: 4,
-    title: 'Aplicación de una herramienta digital',
-    description: 'Elige una herramienta digital del módulo y describe cómo la usarías con tu grupo.',
+    title: 'Diseña una estrategia innovadora',
+    description: 'Diseña una actividad breve para tu clase que combine una herramienta digital con una estrategia pedagógica activa.',
   },
 ]
