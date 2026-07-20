@@ -38,7 +38,7 @@ const fadeUp = {
           Espacio de autocapacitación para docentes de educación primaria rural
         </p>
         <p class="mt-4 text-sm text-(--color-muted)">
-          Curso: Educación en línea · Autora: Mtra. Nora Torres
+          Curso: Educación en línea · Autora: Mtra. Nora Yeny Torres Robles
         </p>
         <p class="mx-auto mt-6 max-w-xl text-base italic text-(--color-ink)/75">
           "Aprender, compartir e innovar para transformar la educación en nuestras comunidades rurales."
