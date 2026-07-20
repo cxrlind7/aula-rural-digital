@@ -6,7 +6,7 @@ const facts = [
   { icon: ClockIcon, label: 'Modalidad', value: 'En línea, autoadministrado (asíncrono)' },
   { icon: ClockIcon, label: 'Duración estimada', value: '20 horas' },
   { icon: UserGroupIcon, label: 'Dirigido a', value: 'Docentes frente a grupo de educación primaria en contextos rurales' },
-  { icon: AcademicCapIcon, label: 'Autora', value: 'Mtra. Nora Torres' },
+  { icon: AcademicCapIcon, label: 'Autora', value: 'Mtra. Nora Yeny Torres Robles' },
 ]
 </script>
 
@@ -77,10 +77,22 @@ const facts = [
       :transition="{ duration: 0.35, delay: 0.1 }"
     >
       <h2 class="text-xl">Sobre la autora</h2>
-      <p class="mt-3 text-sm text-(--color-muted)">
-        Mtra. Nora Torres — espacio para una breve semblanza: años de experiencia, funciones y formación
-        académica.
+      <p class="mx-auto mt-3 max-w-2xl text-(--color-ink)/80">
+        La Mtra. Nora Yeny Torres Robles cuenta con 24 años de servicio en el sistema educativo, 19 de los cuales se ha
+        desempeñado como Asesora Técnica Pedagógica (ATP), acompañando de cerca a docentes de educación primaria
+        en el fortalecimiento de su práctica diaria. Es Maestra en Educación, con formación en el campo de la
+        Intervención Didáctica, cuenta con una especialidad en Docencia y, más recientemente, concluyó un
+        diplomado en Comunidades de Aprendizaje y el Plan de Estudios 2022. Esta trayectoria —entre el aula, la
+        asesoría técnica y la formación continua— es la base de Aula Rural Digital: un curso pensado desde la
+        experiencia real de la escuela rural.
       </p>
+      <div class="mt-5 flex flex-wrap justify-center gap-2">
+        <span class="badge-pill bg-(--color-primary)/12 text-(--color-primary-dark)">24 años de servicio</span>
+        <span class="badge-pill bg-(--color-primary)/12 text-(--color-primary-dark)">19 años como ATP</span>
+        <span class="badge-pill bg-(--color-secondary)/15 text-(--color-secondary-dark)">Maestría en Intervención Didáctica</span>
+        <span class="badge-pill bg-(--color-secondary)/15 text-(--color-secondary-dark)">Especialidad en Docencia</span>
+        <span class="badge-pill bg-(--color-accent)/25 text-(--color-accent-dark)">Diplomado en Comunidades de Aprendizaje y Plan 2022</span>
+      </div>
     </motion.div>
   </div>
 </template>
