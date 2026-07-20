@@ -1,0 +1,53 @@
+import type { CourseModule } from '@/types'
+
+export const modules: CourseModule[] = [
+  {
+    id: 1,
+    slug: 'pedagogia-rural',
+    title: 'Pedagogía Rural',
+    objective: 'Reconocer las particularidades de la enseñanza en contextos rurales y multigrado, y las estrategias pedagógicas que mejor responden a ellas.',
+    contents: [
+      'Características del aula multigrado',
+      'Planeación diferenciada',
+      'Aprendizaje situado y comunitario',
+      'Gestión del tiempo y organización del aula',
+    ],
+    duration: '7 horas',
+    icon: 'BookOpenIcon',
+    color: '#3CDBD3',
+    locked: false,
+  },
+  {
+    id: 2,
+    slug: 'educacion-en-linea',
+    title: 'Educación en Línea',
+    objective: 'Comprender los principios básicos de la educación en línea y el autoaprendizaje como herramienta de formación continua.',
+    contents: ['¿Qué es la educación en línea?', 'Ventajas y retos en zonas rurales', 'Organización del tiempo de estudio'],
+    duration: '4 horas',
+    icon: 'ComputerDesktopIcon',
+    color: '#7DCE82',
+    locked: true,
+  },
+  {
+    id: 3,
+    slug: 'estrategias-didacticas',
+    title: 'Estrategias Didácticas',
+    objective: 'Diseñar actividades didácticas innovadoras, adaptables a distintos grados y con recursos limitados.',
+    contents: ['Estrategias activas de enseñanza', 'Trabajo colaborativo en el aula', 'Adaptación de materiales según el grado'],
+    duration: '6 horas',
+    icon: 'LightBulbIcon',
+    color: '#E8E288',
+    locked: true,
+  },
+  {
+    id: 4,
+    slug: 'innovacion-educativa',
+    title: 'Innovación Educativa',
+    objective: 'Integrar herramientas y recursos digitales sencillos que enriquezcan la práctica docente cotidiana.',
+    contents: ['Herramientas digitales de bajo consumo de datos', 'Recursos descargables para trabajar sin conexión', 'Evaluación del propio aprendizaje'],
+    duration: '5 horas',
+    icon: 'SparklesIcon',
+    color: '#FF8360',
+    locked: true,
+  },
+]
